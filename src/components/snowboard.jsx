@@ -22,13 +22,23 @@ export const Snowboard = (props) => {
             </div>
             <div className={"col-md-4 col-sm-12"}>
                   <h3 className="mt-0">{props.data.included.title}</h3>
+              <div className="list-style">
+                  <ul>
+
                   {props.data.included.paragraphs.map((paragraph, idx) =>
-                      <p key={`include-${idx}`}>{paragraph}</p>)}
+                      <li key={`include-${idx}`}>{paragraph}</li>)}
+                    </ul>
+
+                </div>
                 </div>
               <div className={"col-md-4 col-sm-12"}>
                   <h3 className="mt-0">{props.data.notIncluded.title}</h3>
+                <div className="list-style unchecked">
+                  <ul>
                   {props.data.notIncluded.paragraphs.map((paragraph, idx) =>
-                      <p key={`notinclude-${idx}`}>{paragraph}</p>)}
+                      <li key={`notinclude-${idx}`}>{paragraph}</li>)}
+                  </ul>
+                </div>
                 </div>
               </div>
 
@@ -36,17 +46,17 @@ export const Snowboard = (props) => {
           <div className={"col-sm-12"}>
           <div className={"row"}>
             <div className={"col-md-4 col-sm-12"}>
-              <h3 className="mt-0">{props.data.accomodation.title}</h3>
+              <h3>{props.data.accomodation.title}</h3>
               {props.data.accomodation.paragraphs.map((paragraph, idx) =>
                   <p key={`accomodation-${idx}`}>{paragraph}</p>)}
             </div>
             <div className={"col-md-4 col-sm-12"}>
-              <h3 className="mt-0">{props.data.transport.title}</h3>
+              <h3>{props.data.transport.title}</h3>
               {props.data.transport.paragraphs.map((paragraph, idx) =>
                   <p key={`transport-${idx}`}>{paragraph}</p>)}
             </div>
             <div className={"col-md-4 col-sm-12"}>
-              <h3 className="mt-0">{props.data.equipment.title}</h3>
+              <h3>{props.data.equipment.title}</h3>
               {props.data.equipment.paragraphs.map((paragraph, idx) =>
                   <p key={`equipment-${idx}`}>{paragraph}</p>)}
             </div>

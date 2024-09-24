@@ -14,7 +14,9 @@ export const Features = (props) => {
                 <div key={`${sport.title}-${index}`} className="col-xs-12 col-md-4">
                     <div className="card">
                       {" "}
-                      <i className={sport.icon}></i>
+                        <div className={"icon-container"}>
+                            <img alt={sport.img} src={sport.img}  height="70px"></img>
+                        </div>
                       <h3>{sport.title}</h3>
                       <p>{sport.text}</p>
                         {sport.link && <Link to={sport.link}>Vezi detalii</Link>}

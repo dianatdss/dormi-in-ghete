@@ -1,25 +1,22 @@
 import React from "react";
+import {Banner} from './banner';
 
 export const Header = (props) => {
   return (
     <header id="header" >
       <div className="intro min-vh-100">
+        <Banner button={"Vreau sa aflu mai multe"} title={"Nou"} link={"/snowboard"} subtitle={"Facem tabere de snowboard"}></Banner>
         <div className="overlay min-vh-100">
           <div className="container">
             <div className="row">
-              <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1>
-                  {props.data ? props.data.title : "Loading"}
-                  <span></span>
-                </h1>
+              {props && props.data && <div className="col-md-8 col-md-offset-2 intro-text">
                 {/*<p>{props.data ? props.data.paragraph : "Loading"}</p>*/}
-                <a
-                  href="#features"
-                  className="btn btn-custom btn-lg page-scroll"
-                >
-                  Learn More
-                </a>{" "}
-              </div>
+                <img
+                    alt={props.data.title}
+                    src={props.data.image}
+                    width="200px"
+                />
+              </div>}
             </div>
           </div>
         </div>

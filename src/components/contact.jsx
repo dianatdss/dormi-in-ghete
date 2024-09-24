@@ -5,21 +5,14 @@ export const Contact = (props) => {
     <div>
       <div id="contact">
         <div className="container">
+            <div className="col-md-12 section-title">
+                <h2>Cum ne gasesti</h2>
+            </div>
             <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
+                    <a href={props.data ? props.data.instagram : "/"} target="_blank">
                       <i className="fa fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
                     </a>
                   </li>
                 </ul>

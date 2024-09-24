@@ -248,6 +248,11 @@ header .intro-text {
 #features {
   background: #f6f6f6;
   padding: 100px 0;
+
+  a {
+    color: #d65bf5 !important;
+    font-weight: 800;
+  }
 }
 #features i.fa {
   font-size: 38px;
@@ -283,12 +288,14 @@ header .intro-text {
   bottom: 0;
   left: 0;
 }
+#portfolio .list-style li,
 #about .about-text li {
   margin-bottom: 6px;
   margin-left: 6px;
   list-style: none;
   padding: 0;
 }
+#portfolio .list-style li:before,
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
@@ -296,6 +303,10 @@ header .intro-text {
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
+}
+
+#portfolio .list-style.unchecked li:before {
+  content: '\f05e';
 }
 #about img {
   width: 520px;
@@ -561,8 +572,6 @@ label {
   margin-right: 10px;
 }
 #contact .social {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 50px;
   margin-top: 50px;
   text-align: center;
 }
@@ -611,4 +620,43 @@ label {
 
 .min-vh-100 {
   min-height: 100vh;
+}
+
+#banner {
+  background: linear-gradient(to right, #aa17cf 0%, #d65bf5 100%);
+    color: #fff;
+  top: 100px;
+  position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px 120px;
+  border: 1px solid #d65bf5;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+
+  h4 {
+    color: #fff;
+  }
+  .align-right {
+    text-align: right;
+  }
+}
+.card {
+  display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+.icon-container {
+  background: linear-gradient(to right, #aa17cf 0%, #d65bf5 100%);
+  padding: 30px;
+    border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+  img {
+    filter: invert(1);
+
+  }
 }

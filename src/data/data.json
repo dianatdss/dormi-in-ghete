@@ -1,8 +1,7 @@
 {
   "Header": {
-    "title": "Dormi in ghete",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
-  },
+    "image": "img/logo.png"
+   },
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "Why": [
@@ -21,10 +20,10 @@
   "Snowboard": {
     "image": {
       "title": "Snowboard",
-      "img": "img/portfolio/06-large.jpg"
+      "img": "img/landscape.jpeg"
     },
     "included": {
-        "title": "Ce asiguram",
+        "title": "Cu ce ne ocupam",
         "paragraphs": [
             "Lorem ipsum dolor",
             "Lorem ipsum dolor",
@@ -145,26 +144,22 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "instagram": "https://www.instagram.com/dormi.in.ghete/"
   },
   "Features": [
     {
-      "icon": "fa fa-hiking",
+      "img": "img/hike.svg",
       "title": "Drumetii montane",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     },
     {
-      "icon": "fa fa-snowboarding",
+        "img": "img/snowboard.svg",
       "title": "Tabere snowboard",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
       "link": "/snowboard"
     },
     {
+      "img": "img/mtb.svg",
       "icon": "fa fa-bicycle",
       "title": "Trasee cu bicicleta",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."

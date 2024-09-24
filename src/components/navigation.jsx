@@ -1,7 +1,7 @@
 import React from "react";
 import {Link, useLocation} from 'react-router-dom';
 
-export const Navigation = (props) => {
+export const Navigation = () => {
   const { pathname } = useLocation();
 
   return (
@@ -23,7 +23,7 @@ export const Navigation = (props) => {
           {pathname === '/' ?
               <a href="#page-top" className="navbar-brand page-scroll">DORMI IN GHETE</a> :
               <Link to="/">
-            <div className="navbar-brand page-scroll">DORMI IN GHETE</div>
+            <a className="navbar-brand page-scroll">DORMI IN GHETE</a>
           </Link>}
         </div>
 
