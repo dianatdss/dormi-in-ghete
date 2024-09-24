@@ -23,7 +23,7 @@ export const Navigation = () => {
           {pathname === '/' ?
               <a href="#page-top" className="navbar-brand page-scroll">DORMI IN GHETE</a> :
               <Link to="/">
-            <a className="navbar-brand page-scroll">DORMI IN GHETE</a>
+            <a href="javascript:;" className="navbar-brand page-scroll">DORMI IN GHETE</a>
           </Link>}
         </div>
 
