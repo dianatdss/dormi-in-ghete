@@ -13,6 +13,9 @@ import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Snowboard } from './components/snowboard';
+import {Services} from './components/services';
+import {Testimonials} from './components/testimonials';
+import {Team} from './components/Team';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -37,15 +40,13 @@ const App = () => {
                 <Fragment>
                     <Header data={landingPageData.Header} />
                     <Features data={landingPageData.Features} />
+                    <Services data={landingPageData.Services} />
                     <About data={landingPageData.About} />
                     <Contact data={landingPageData.Contact} />
                 </Fragment>
             }>
 
-                {/*<Services data={landingPageData.Services} />*/}
-                {/*<Snowboard data={landingPageData.Snowboard} />*/}
-                {/*<Testimonials data={landingPageData.Testimonials} />*/}
-                {/*<Team data={landingPageData.Team} />*/}
+
             </Route>
             <Route path="/snowboard" element={
                 <Snowboard data={landingPageData.Snowboard} name={`Snowboard`} />

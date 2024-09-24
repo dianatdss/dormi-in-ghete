@@ -1,29 +1,23 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 export const Services = (props) => {
   return (
-    <div id="services" className="text-center">
+    <div id="services" >
       <div className="container">
-        <div className="section-title">
-          <h2>Our Services</h2>
+        <div className="col-md-8">
+          <h2>Nou</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Hai cu noi in tabara de snowboard
           </p>
         </div>
         <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <div className="service-desc">
-                    <h3>{d.name}</h3>
-                    <p>{d.text}</p>
-                  </div>
-                </div>
-              ))
-            : "loading"}
+         <div className={"col-xs-12 col-md-4"}>
+           <div className="button-container">
+                <Link to="/snowboard" className="btn btn-custom">Vreau sa aflu mai multe</Link>
+           </div>
+           </div>
+
         </div>
       </div>
     </div>
