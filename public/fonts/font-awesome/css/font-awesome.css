@@ -1187,6 +1187,12 @@
 .fa-youtube:before {
   content: "\f167";
 }
+.fa-snowboarding:before {
+  content:"\f7ce";
+}
+.fa-hiking:before {
+  content:"\f6ec";
+}
 .fa-xing:before {
   content: "\f168";
 }

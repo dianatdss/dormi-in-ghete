@@ -1,6 +1,9 @@
 import React from "react";
+import {Link, useLocation} from 'react-router-dom';
 
 export const Navigation = (props) => {
+  const { pathname } = useLocation();
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -17,53 +20,55 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
-          </a>{" "}
+          {pathname === '/' ?
+              <a href="#page-top" className="navbar-brand page-scroll">DORMI IN GHETE</a> :
+              <Link to="/">
+            <div className="navbar-brand page-scroll">DORMI IN GHETE</div>
+          </Link>}
         </div>
 
-        <div
-          className="collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1"
+        {pathname === '/' && <div
+            className="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
               <a href="#features" className="page-scroll">
-                Features
+                Ce facem
               </a>
             </li>
             <li>
               <a href="#about" className="page-scroll">
-                About
+                Cine suntem
               </a>
             </li>
-            <li>
-              <a href="#services" className="page-scroll">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#portfolio" className="page-scroll">
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href="#team" className="page-scroll">
-                Team
-              </a>
-            </li>
+            {/*<li>*/}
+            {/*  <a href="#services" className="page-scroll">*/}
+            {/*    Services*/}
+            {/*  </a>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*  <a href="#portfolio" className="page-scroll">*/}
+            {/*    Snowboard*/}
+            {/*  </a>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*  <a href="#testimonials" className="page-scroll">*/}
+            {/*    Testimonials*/}
+            {/*  </a>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*  <a href="#team" className="page-scroll">*/}
+            {/*    Team*/}
+            {/*  </a>*/}
+            {/*</li>*/}
             <li>
               <a href="#contact" className="page-scroll">
-                Contact
+                Cum ne gasesti
               </a>
             </li>
           </ul>
-        </div>
+        </div>}
       </div>
     </nav>
   );
