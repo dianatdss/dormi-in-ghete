@@ -1,11 +1,10 @@
 import React from "react";
-import {Banner} from './banner';
 
 export const Header = (props) => {
   return (
     <header id="header" >
       <div className="intro min-vh-100">
-        <Banner button={"Vreau sa aflu mai multe"} title={"Nou"} link={"/snowboard"} subtitle={"Facem tabere de snowboard"}></Banner>
+        {/*<Banner button={"Vreau sa aflu mai multe"} title={"Nou"} link={"/snowboard"} subtitle={"Facem tabere de snowboard"}></Banner>*/}
         <div className="overlay min-vh-100">
           <div className="container">
             <div className="row">
