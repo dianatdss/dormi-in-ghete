@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, useLocation} from 'react-router-dom';
+import { useLocation} from 'react-router-dom';
 
 export const Navigation = () => {
   const { pathname } = useLocation();
@@ -20,11 +20,7 @@ export const Navigation = () => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          {pathname === '/' ?
-              <a href="#page-top" className="navbar-brand page-scroll">DORMI IN GHETE</a> :
-              <Link to="/">
-            <a href="/" className="navbar-brand page-scroll">DORMI IN GHETE</a>
-          </Link>}
+              <a href={pathname === '/' ? '#page-top' : '/'} className="navbar-brand page-scroll">DORMI IN GHETE</a>
         </div>
 
         {pathname === '/' && <div
