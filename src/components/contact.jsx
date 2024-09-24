@@ -11,7 +11,7 @@ export const Contact = (props) => {
             <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.instagram : "/"} target="_blank">
+                    <a href={props.data ? props.data.instagram : "/"} rel="noreferrer" target="_blank">
                       <i className="fa fa-instagram"></i>
                     </a>
                   </li>

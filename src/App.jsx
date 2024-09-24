@@ -3,10 +3,7 @@ import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { About } from "./components/about";
-// import { Services } from "./components/services";
-// import { Snowboard } from "./components/gallery";
-// import { Testimonials } from "./components/testimonials";
-// import { Team } from "./components/Team";
+
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -14,8 +11,6 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Snowboard } from './components/snowboard';
 import {Services} from './components/services';
-import {Testimonials} from './components/testimonials';
-import {Team} from './components/Team';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
